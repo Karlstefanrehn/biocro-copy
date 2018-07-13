@@ -1,0 +1,18 @@
+Package: BioCro
+Version: 0.268-0
+Title: Simulation of Biomass Crops
+Author: Fernando Miguez <femiguez@iastate.edu>
+Maintainer: Fernando Miguez <femiguez@iastate.edu>
+Depends: R(>= 2.10), lattice
+Suggests: coda, knitr
+Imports: stats
+VignetteBuilder: knitr
+Description: Simulates C4 photosynthesis, biomass production and estimates parameters for plant phyisiological models using optimization techinques and Markov chains.
+License: GPL (>= 2)
+Repository: R-Forge
+Repository/R-Forge/Project: biocro
+Repository/R-Forge/Revision: 101
+Repository/R-Forge/DateTimeStamp: 2015-12-14 22:47:03
+Date/Publication: 2015-12-14 22:47:03
+NeedsCompilation: yes
+Packaged: 2015-12-14 23:10:57 UTC; rforge

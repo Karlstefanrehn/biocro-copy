@@ -1,0 +1,65 @@
+########################################################################
+#
+# Updated 1-5-2015
+#
+#
+########################################################################
+
+Immediate priorities
+
+ o After I fix the water balance problem I will work on the multiple
+   layer model
+
+ o Include Hamze's work on simulating root respiration
+
+ o Need to work on soil. Allow the possibility of determining
+   different soil properties for different layers.
+
+ o Create a simple model of soil temperature.
+
+ o Possibly get rid of some redundancy such as SoilWatCont and cwsMat
+   in BioGro output
+
+ o Include 0.9882 in the conversion of evapotranspiration in mass to volume
+
+Nitrogen
+
+ o Determine the N demand from the crop
+
+Less immediate priorities
+
+ o Add the possibility of computing water stress using a supply and
+   demand approach instead of the soil water content approach 
+
+ o There is a known 'bug' that is not that easy to fix. It is related
+   to CosZenithAngle which can cause very high photosynthesis late in
+   the day with observed data (i.e. data not processed with the weach
+   function).
+
+ o The weach function can be improved to reflect better relationships
+   for relative humidity and wind speed. There is also an assumption
+   that 0.12 of the radiation in a day occurs during an hour at peak
+   insolation.
+
+ o In sunML/CanA the kd needs to be calculated rather than a fixed value of say 0.7.
+
+ o Notes about the model: the soil water potential seems to stop at
+   -1500 but  this should not be the case. It should be able to go down lower.
+
+ o The function to model corn has limitations. Although it is working
+   fairly well there is more work to do regarding the reproductive
+   period since only carbon is being allocated but there is no
+   consideration for pollen production or silking. 
+
+ o I should at some point get rid of the MCMCBioGro function since it
+   is very difficult to maintain now with all the changes happening to
+   BioGro
+
+
+
+
+
+
+ 
+
+
